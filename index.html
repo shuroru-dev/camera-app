@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Shuroru Stealth Camera</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app-container">
+        <div class="video-wrapper">
+            <video id="monitor" autoplay playsinline muted></video>
+            <canvas id="capture-canvas" style="display: none;"></canvas>
+        </div>
 
+        <div class="control-panel">
+            <div class="top-controls">
+                <button id="btn-settings" class="icon-btn"><img src="icon/settings.png" alt="Settings"></button>
+                <button id="btn-reload" class="icon-btn"><img src="icon/reload.png" alt="Switch"></button>
+            </div>
+
+            <div class="center-controls">
+                <input type="range" id="zoom-range" min="1" max="5" step="0.1" value="1">
+            </div>
+
+            <div class="bottom-controls">
+                <button id="btn-video" class="shutter-btn small">
+                    <img src="icon/off video.png" id="video-icon" alt="Record">
+                </button>
+                <button id="btn-camera" class="shutter-btn main">
+                    <img src="icon/camera.png" alt="Photo">
+                </button>
+                <div class="spacer"></div> </div>
+        </div>
+    </div>
+    <script src="Javascript/scrict.js"></script>
+</body>
+</html>
